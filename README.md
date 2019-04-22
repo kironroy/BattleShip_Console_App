@@ -1,6 +1,5 @@
 # BattleShip_Console_App
-_Battleship Console application written in C#_
-_Visual Studio 2019_
+_Battleship Console application written in C# with Visual Studio 2019_
 
 #### Basic Requirements
 
