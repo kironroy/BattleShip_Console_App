@@ -11,7 +11,7 @@ namespace BattleshipLiteLibrary.Style
         public static void BattleshipOpeningTitle()
         {
 
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Blue;
 
             Console.Title = "Battleship Console Game";
             Console.WriteLine(); // breakline
@@ -26,14 +26,43 @@ namespace BattleshipLiteLibrary.Style
                         ########  ##     ##    ##       ##    ######## ########  ######  ##     ## #### ##        
                 ";
 
-            typeWritter(battleShipStartGraphic);
+            Console.WriteLine(battleShipStartGraphic);
             Console.WriteLine(); // breakline
             Console.ForegroundColor = ConsoleColor.Yellow;
             CenterText.centerText("Press enter to continue...");
             Console.ReadKey();
             Console.Clear();
 
-        } // method end
+        } 
+
+        public static void BattleshipEndingTitle()
+        {
+
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.Title = "Battleship Console Game";
+            Console.WriteLine(); // breakline
+            string battleShipGameOverGraphic =
+                 @"
+                       
+                          _______      ___      .___  ___.  _______   ______   ____    ____  _______ .______      
+                         /  _____|    /   \     |   \/   | |   ____| /  __  \  \   \  /   / |   ____||   _  \     
+                        |  |  __     /  ^  \    |  \  /  | |  |__   |  |  |  |  \   \/   /  |  |__   |  |_)  |    
+                        |  | |_ |   /  /_\  \   |  |\/|  | |   __|  |  |  |  |   \      /   |   __|  |      /     
+                        |  |__| |  /  _____  \  |  |  |  | |  |____ |  `--'  |    \    /    |  |____ |  |\  \----.
+                         \______| /__/     \__\ |__|  |__| |_______| \______/      \__/     |_______|| _| `._____|
+                                                                                          
+   
+                ";
+
+            typeWritter(battleShipGameOverGraphic);
+            Console.WriteLine(); // breakline
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            CenterText.centerText("Press enter to continue...");
+            Console.ReadKey();
+            Console.Clear();
+
+        } 
 
         public static void typeWritter(string message)
         {

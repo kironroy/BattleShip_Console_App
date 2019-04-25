@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisplayToConsole.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="Style\CenterText.cs" />
     <Compile Include="Models\Enums.cs" />
